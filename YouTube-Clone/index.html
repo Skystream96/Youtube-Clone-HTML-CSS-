@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yotube Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="IMG/youtube-logo-png-2061.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <i class="ri-menu-line"></i>
+      <div class="logo">
+        <div class="logo-img">
+          <img src="IMG/youtube-logo-png-2061.png" alt="">
+        </div>
+        <a href="#">
+            <h1 id="logo-txt">YouTube</h1>
+        </a>
+      </div>
+    </div>
+    <div class="search-container">
+      <form action="">
+        <input type="text" placeholder="Search">
+      </form>
+      <button class="search-btn"><i class="ri-search-line"></i></button>
+      <button class="mic-btn"><i class="ri-mic-fill"></i></button>
+    </div>
+    <div class="profile-container">
+      <i class="ri-video-add-line"></i>
+            <i class="ri-grid-fill"></i>
+            <i class="ri-notification-4-line"></i>
+            <a href="#" class="profile-box">
+                <img src="http://unsplash.it/36/36?gravity=center" />
+            </a>
+    </div>
+  </div>
+  <div class="body-container">
+    <div class="sidebar">
+      <div class="siderbar-items">
+        <a href="#" class="sidebar-item"><i class="ri-home-5-line"></i>Home</a>
+        <a href="#" class="sidebar-item"><i class="ri-wireless-charging-line"></i>Shorts</a>
+        <a href="#" class="sidebar-item"><i class="ri-rss-line"></i>Subscriptions</a>
+        <a href="#" class="sidebar-item"><i class="ri-movie-line"></i>Originals</a>
+        <a href="#" class="sidebar-item"><i class="ri-music-line"></i>Youtube Music</a>
+        <hr>
+        <a href="#" class="sidebar-item"><i class="ri-links-line"></i>Library</a>
+        <a href="#" class="sidebar-item"><i class="ri-history-line"></i>History</a>
+        <a href="#" class="sidebar-item"><i class="ri-video-line"></i>Your Videos</a>
+        <a href="#" class="sidebar-item"><i class="ri-time-line"></i>Watch Later</a>
+        <a href="#" class="sidebar-item"><i class="ri-file-download-fill"></i>Downloads</a>
+        <a href="#" class="sidebar-item"><i class="ri-thumb-up-fill"></i>Liked Videos</a>
+        <a href="#" class="sidebar-item"><i class="ri-arrow-down-s-line"></i>Show More</a>
+        <hr>
+        <h4 class="sidebar-section-title">Subscriptions</h4>
+        <a href="#" class="sidebar-item">
+          <div class="subscriber-container">
+                <div class="subscriber-profile">
+                    <img src="http://unsplash.it/36/36?gravity=center" />
+                </div>
+                <p>Subscriber Name</p>
+                <span class="bubble"></span>
+          </div>
+        </a>
+        <a href="#" class="sidebar-item">
+          <div class="subscriber-container">
+                <div class="subscriber-profile">
+                    <img src="http://unsplash.it/36/36?gravity=center" />
+                </div>
+                <p>Subscriber Name</p>
+                <span class="bubble"></span>
+          </div>
+        </a>
+        <a href="#" class="sidebar-item">
+          <div class="subscriber-container">
+                <div class="subscriber-profile">
+                    <img src="http://unsplash.it/36/36?gravity=center" />
+                </div>
+                <p>Subscriber Name</p>
+                <span class="bubble"></span>
+          </div>
+        </a>
+        <hr>
+        <h4 class="sidebar-section-title">Explore</h4>
+        <a href="#" class="sidebar-item"><i class="ri-line-chart-fill"></i>Trending</a>
+        <a href="#" class="sidebar-item"><i class="ri-headphone-fill"></i>Music</a>
+        <a href="#" class="sidebar-item"><i class="ri-gamepad-fill"></i>Gaming</a>
+        <a href="#" class="sidebar-item"><i class="ri-trophy-fill"></i>Sports</a>
+
+      </div>
+    </div>
+    <div class="content">
+      <div class="chips-wrapper">
+          <div class="chip">
+              <p>All</p>
+          </div>
+          <div class="chip">
+              <p>CSS</p>
+          </div>
+          <div class="chip">
+              <p>User interface design</p>
+          </div>
+          <div class="chip">
+              <p>User interface design</p>
+          </div>
+          <div class="chip">
+              <p>User interface design</p>
+          </div>
+          <div class="chip">
+              <p>User interface design</p>
+          </div>
+          <div class="chip">
+              <p>User interface design</p>
+          </div>
+          <div class="chip">
+              <p>User interface design</p>
+          </div>
+          <div class="chip">
+              <p>User interface design</p>
+          </div>
+      </div>
+      <div class="video-container">
+          <div class="video-content-cover">
+              <div class="video-content">
+                  <a href="#" class="video-box">
+                    <div class="hidden-content">
+                        <div class="btn"><i class="ri-volume-mute-line"></i></div>
+                        <div class="btn"><i class="ri-closed-captioning-line"></i></div>
+                    </div>
+                      <img src="http://unsplash.it/200/200?gravity=center" alt="">
+                  </a>
+                  <div class="video-details">
+                      <div class="channel-logo">
+                          <img src="http://unsplash.it/36/36?gravity=center" alt="">
+                      </div>
+                      <div class="detail">
+                          <h3 class="title">This is a random title</h3>
+                          <div class="channel-name">Testing User</div>
+                          <div class="views-upload">
+                              <div class="views">120K views</div>
+                              <span>•</span>
+                              <div class="upload">1 year ago</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="video-content-cover">
+            <div class="video-content">
+                <a href="#" class="video-box">
+                  <div class="hidden-content">
+                      <div class="btn"><i class="ri-volume-mute-line"></i></div>
+                      <div class="btn"><i class="ri-closed-captioning-line"></i></div>
+                  </div>
+                    <img src="http://unsplash.it/200/200?gravity=center" alt="">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">This is a random title</h3>
+                        <div class="channel-name">Testing User</div>
+                        <div class="views-upload">
+                            <div class="views">120K views</div>
+                            <span>•</span>
+                            <div class="upload">1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="#" class="video-box">
+                  <div class="hidden-content">
+                      <div class="btn"><i class="ri-volume-mute-line"></i></div>
+                      <div class="btn"><i class="ri-closed-captioning-line"></i></div>
+                  </div>
+                    <img src="http://unsplash.it/200/200?gravity=center" alt="">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">This is a random title</h3>
+                        <div class="channel-name">Testing User</div>
+                        <div class="views-upload">
+                            <div class="views">120K views</div>
+                            <span>•</span>
+                            <div class="upload">1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="#" class="video-box">
+                  <div class="hidden-content">
+                      <div class="btn"><i class="ri-volume-mute-line"></i></div>
+                      <div class="btn"><i class="ri-closed-captioning-line"></i></div>
+                  </div>
+                    <img src="http://unsplash.it/200/200?gravity=center" alt="">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">This is a random title</h3>
+                        <div class="channel-name">Testing User</div>
+                        <div class="views-upload">
+                            <div class="views">120K views</div>
+                            <span>•</span>
+                            <div class="upload">1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="#" class="video-box">
+                  <div class="hidden-content">
+                      <div class="btn"><i class="ri-volume-mute-line"></i></div>
+                      <div class="btn"><i class="ri-closed-captioning-line"></i></div>
+                  </div>
+                    <img src="http://unsplash.it/200/200?gravity=center" alt="">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">This is a random title</h3>
+                        <div class="channel-name">Testing User</div>
+                        <div class="views-upload">
+                            <div class="views">120K views</div>
+                            <span>•</span>
+                            <div class="upload">1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="#" class="video-box">
+                  <div class="hidden-content">
+                      <div class="btn"><i class="ri-volume-mute-line"></i></div>
+                      <div class="btn"><i class="ri-closed-captioning-line"></i></div>
+                  </div>
+                    <img src="http://unsplash.it/200/200?gravity=center" alt="">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">This is a random title</h3>
+                        <div class="channel-name">Testing User</div>
+                        <div class="views-upload">
+                            <div class="views">120K views</div>
+                            <span>•</span>
+                            <div class="upload">1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="#" class="video-box">
+                  <div class="hidden-content">
+                      <div class="btn"><i class="ri-volume-mute-line"></i></div>
+                      <div class="btn"><i class="ri-closed-captioning-line"></i></div>
+                  </div>
+                    <img src="http://unsplash.it/200/200?gravity=center" alt="">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">This is a random title</h3>
+                        <div class="channel-name">Testing User</div>
+                        <div class="views-upload">
+                            <div class="views">120K views</div>
+                            <span>•</span>
+                            <div class="upload">1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="#" class="video-box">
+                  <div class="hidden-content">
+                      <div class="btn"><i class="ri-volume-mute-line"></i></div>
+                      <div class="btn"><i class="ri-closed-captioning-line"></i></div>
+                  </div>
+                    <img src="http://unsplash.it/200/200?gravity=center" alt="">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">This is a random title</h3>
+                        <div class="channel-name">Testing User</div>
+                        <div class="views-upload">
+                            <div class="views">120K views</div>
+                            <span>•</span>
+                            <div class="upload">1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="#" class="video-box">
+                  <div class="hidden-content">
+                      <div class="btn"><i class="ri-volume-mute-line"></i></div>
+                      <div class="btn"><i class="ri-closed-captioning-line"></i></div>
+                  </div>
+                    <img src="http://unsplash.it/200/200?gravity=center" alt="">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">This is a random title</h3>
+                        <div class="channel-name">Testing User</div>
+                        <div class="views-upload">
+                            <div class="views">120K views</div>
+                            <span>•</span>
+                            <div class="upload">1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="#" class="video-box">
+                  <div class="hidden-content">
+                      <div class="btn"><i class="ri-volume-mute-line"></i></div>
+                      <div class="btn"><i class="ri-closed-captioning-line"></i></div>
+                  </div>
+                    <img src="http://unsplash.it/200/200?gravity=center" alt="">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">This is a random title</h3>
+                        <div class="channel-name">Testing User</div>
+                        <div class="views-upload">
+                            <div class="views">120K views</div>
+                            <span>•</span>
+                            <div class="upload">1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="#" class="video-box">
+                  <div class="hidden-content">
+                      <div class="btn"><i class="ri-volume-mute-line"></i></div>
+                      <div class="btn"><i class="ri-closed-captioning-line"></i></div>
+                  </div>
+                    <img src="http://unsplash.it/200/200?gravity=center" alt="">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">This is a random title</h3>
+                        <div class="channel-name">Testing User</div>
+                        <div class="views-upload">
+                            <div class="views">120K views</div>
+                            <span>•</span>
+                            <div class="upload">1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+      </div>
+  </div>
+</div>
+  </div>
+  
+</body>
+
+</html>
