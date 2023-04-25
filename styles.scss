@@ -20,6 +20,9 @@
 	.--visually-hidden {
 		display: none;
 	}
+	.margin {
+		margin-right: 24px;
+	}
 }
 * {
 	box-sizing: border-box;
@@ -64,21 +67,6 @@ hr {
 	border-radius: 5px;
 	&:hover {
 		background: #888;
-	}
-}
-.navbar {
-	&:hover {
-		&::-webkit-scrollbar-thumb {
-			background: #717171;
-		}
-	}
-	background-color: var(--dark-bg);
-	padding-top: 10px;
-	width: 240px;
-	overflow-y: scroll;
-	a {
-		color: var(--white-color);
-		text-decoration: none;
 	}
 }
 .header {
@@ -207,54 +195,61 @@ img {
 	height: calc(100vh - 60px);
 	top: 60px;
 }
-.navbar-section-title {
-	display: block;
-	color: #f1f1f1;
-	padding: 6px 12px 4px;
-}
-.navbar-items {
-	display: flex;
-	flex-direction: column;
-}
-.navbar-item {
-	display: flex;
-	align-items: center;
-	padding: 0 24px;
-	cursor: pointer;
-	height: 40px;
+.navbar {
+	background-color: var(--dark-bg);
+	padding-top: 10px;
+	width: 240px;
+	overflow-y: scroll;
 	&:hover {
-		background-color: #4c4c4c;
+		&::-webkit-scrollbar-thumb {
+			background: #717171;
+		}
 	}
-	i {
-		margin-right: 24px;
+	&__items {
+		display: flex;
+		flex-direction: column;
+		&__item {
+			display: flex;
+			align-items: center;
+			padding: 0 24px;
+			cursor: pointer;
+			height: 40px;
+			&:hover {
+				background-color: #4c4c4c;
+			}
+			&__link {
+				color: var(--white-color);
+				text-decoration: none;
+				&__subscriber {
+					display: flex;
+					align-items: center;
+					&__profile {
+						position: relative;
+						height: 30px;
+						width: 30px;
+						border-radius: 50%;
+						overflow: hidden;
+					}
+					&__txt {
+						padding: 12px;	
+					}
+					&__bubble{
+						width: 4px;
+						height: 4px;
+						border-radius: 50%;
+						background-color: #3ea6ff;
+						margin: 0 6px;
+						z-index: 99999;
+					}
+				}
+			}
+		}
+		&__title {
+			display: block;
+			color: #f1f1f1;
+			padding: 6px 12px 4px;
+		}
 	}
-}
-.navbar-item-subscribers {
-	display: flex;
-	align-items: center;
-	padding: 0 12px;
-}
-.subscriber-container {
-	display: flex;
-	align-items: center;
-	p {
-		padding: 12px;
-	}
-}
-.subscriber-profile {
-	position: relative;
-	height: 30px;
-	width: 30px;
-	border-radius: 50%;
-	overflow: hidden;
-}
-.bubble {
-	width: 4px;
-	height: 4px;
-	border-radius: 50%;
-	background-color: #3ea6ff;
-	margin: 0 6px;
-	z-index: 99999;
 }
 .content {
 	width: calc(100vw - 240px);
