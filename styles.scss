@@ -124,14 +124,14 @@ img {
 }
 .search {
 	width: 50%;
-	form {
+	&__form {
 		display: flex;
 		align-items: center;
 		flex: 0 1 685px;
 		margin-left: 40px;
 		position: relative;
 		width: 100%;
-			input {
+			&__input {
 				height: 40px;
 				display: flex;
 				align-items: center;
@@ -144,45 +144,46 @@ img {
 				border-bottom-left-radius: 20px;
 				border-top-left-radius: 20px;
 			}
-			
-		}
-		&__form__srcBtn {
-			min-width: 60px;
-			height: 40px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			z-index: 999;
-			background-color: hsla(0, 0%, 100%, 0.08);
-			outline: none;
-			border: none;
-			border-top-right-radius: 20px;
-			border-bottom-right-radius: 20px;
-			cursor: pointer;
-		}
-		&__form__micBtn {
-			height: 40px;
-			min-width: 40px;
-			border-radius: 50%;
-			outline: none;
-			border: none;
-			margin-left: 10px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			background-color: #181818;
-			cursor: pointer;
-			&:hover {
-				background-color: var(--grey-color);
+			&__srcBtn {
+				min-width: 60px;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				z-index: 999;
+				background-color: hsla(0, 0%, 100%, 0.08);
+				outline: none;
+				border: none;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				cursor: pointer;
 			}
+			&__micBtn {
+				height: 40px;
+				min-width: 40px;
+				border-radius: 50%;
+				outline: none;
+				border: none;
+				margin-left: 10px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #181818;
+				cursor: pointer;
+				&:hover {
+					background-color: var(--grey-color);
+				}
+			}	
 		}
-		
 	}
 
-.profile-container {
+.profile {
 	display: flex;
 	align-items: center;
-	i {
+	&__uploadBtn,
+	&__notificationBtn {
+		background-color: transparent;
+		border: none;
 		margin-left: 25px;
 		cursor: pointer;
 		&:hover {
@@ -190,19 +191,16 @@ img {
 			border-radius: 50px;
 		}
 	}
-	button {
-		background-color: transparent;
-		border: none;
+	&__img {
+		position: relative;
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-left: 25px;
 	}
 }
-.profile-box {
-	position: relative;
-	height: 30px;
-	width: 30px;
-	border-radius: 50%;
-	overflow: hidden;
-	margin-left: 25px;
-}
+
 .body-container {
 	display: flex;
 	position: fixed;

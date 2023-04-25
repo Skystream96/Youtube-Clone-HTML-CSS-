@@ -131,7 +131,7 @@ img {
 .search {
   width: 50%;
 }
-.search form {
+.search__form {
   display: flex;
   align-items: center;
   flex: 0 1 685px;
@@ -139,7 +139,7 @@ img {
   position: relative;
   width: 100%;
 }
-.search form input {
+.search__form__input {
   height: 40px;
   display: flex;
   align-items: center;
@@ -183,24 +183,21 @@ img {
   background-color: var(--grey-color);
 }
 
-.profile-container {
+.profile {
   display: flex;
   align-items: center;
 }
-.profile-container i {
+.profile__uploadBtn, .profile__notificationBtn {
+  background-color: transparent;
+  border: none;
   margin-left: 25px;
   cursor: pointer;
 }
-.profile-container i:hover {
+.profile__uploadBtn:hover, .profile__notificationBtn:hover {
   background-color: var(--grey-color);
   border-radius: 50px;
 }
-.profile-container button {
-  background-color: transparent;
-  border: none;
-}
-
-.profile-box {
+.profile__img {
   position: relative;
   height: 30px;
   width: 30px;
