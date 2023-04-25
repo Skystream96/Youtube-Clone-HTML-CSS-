@@ -87,11 +87,7 @@ hr {
 	padding-right: 40px;
 	background-color: var(--dark-bg);
 }
-.logo-img {
-	position: relative;
-	height: 50px;
-	width: 50px;
-}
+
 img {
 	position: absolute;
 	top: 0;
@@ -101,17 +97,24 @@ img {
 	object-fit: cover;
 	border-radius: 5px;
 }
-#logo-txt {
-	color: var(--white-color);
-	letter-spacing: -1.5px;
-}
-.logo {
-	display: flex;
-	align-items: center;
-}
+
 .logo-container {
 	display: flex;
 	align-items: center;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+	&__img {
+		position: relative;
+		height: 50px;
+		width: 50px;
+	}
+	&__txt {
+		color: var(--white-color);
+		letter-spacing: -1.5px;
+	}
 }
 .search-container {
 	display: flex;
