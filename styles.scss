@@ -253,44 +253,75 @@ img {
 }
 .content {
 	width: calc(100vw - 240px);
-}
-.chips-wrapper {
-	overflow-x: scroll;
-	background-color: var(--dark-bg);
-	display: flex;
-	padding-left: 14px;
-	&::-webkit-scrollbar {
-		height: 0;
+	&__chips {
+		overflow-x: scroll;
+		background-color: var(--dark-bg);
+		display: flex;
+		padding-left: 14px;
+		&::-webkit-scrollbar {
+			height: 0;
+		}
+		&__item {
+			margin: 12px 6px;
+			background-color: #373737;
+			padding: 6px 12px;
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			border-radius: 16px;
+			white-space: nowrap;
+			cursor: pointer;
+			color: var(--white-color);
+			transition: .5s;
+			&:hover {
+				background-color: #4D4D4D;
+			}
+		}
+	}
+	&__videos {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 18px;
+		padding: 20px 25px;
+		background-color: var(--dark-bg);
+		overflow-y: scroll;
+		height: calc(100vh - 116px);
+		&__item {
+			position: relative;
+			transition: .5s;
+			transition-delay: .05s;
+			&__content{
+				margin-bottom: 25px;
+				position: relative;
+				width: 100%;
+				&__box {
+					position: relative;
+					width: auto;
+					height: 145px;
+					display: block;
+					&:hover {
+						>.hidden-content {
+							display: flex;
+						}
+					}
+
+				}
+				&__details {
+					display: flex;
+					color: #fff;
+					padding-top: 12px;
+					.channel-logo {
+						position: relative;
+						min-width: 35px;
+						height: 35px;
+						border-radius: 50%;
+						overflow: hidden;
+
+					}	
+				}
+			}
+		}
 	}
 }
-.chip {
-	margin: 12px 6px;
-	background-color: #373737;
-	padding: 6px 12px;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border-radius: 16px;
-	white-space: nowrap;
-	cursor: pointer;
-	color: var(--white-color);
-	transition: .5s;
-	&:hover {
-		background-color: #4D4D4D;
-	}
-}
-.video-container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 18px;
-	padding: 20px 25px;
-	background-color: var(--dark-bg);
-	overflow-y: scroll;
-	height: calc(100vh - 116px);
-}
-.video-content-cover {
-	position: relative;
-	transition: .5s;
-	transition-delay: .05s;
-}
+
 .video-content {
 	margin-bottom: 25px;
 	position: relative;

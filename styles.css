@@ -260,18 +260,16 @@ img {
 .content {
   width: calc(100vw - 240px);
 }
-
-.chips-wrapper {
+.content__chips {
   overflow-x: scroll;
   background-color: var(--dark-bg);
   display: flex;
   padding-left: 14px;
 }
-.chips-wrapper::-webkit-scrollbar {
+.content__chips::-webkit-scrollbar {
   height: 0;
 }
-
-.chip {
+.content__chips__item {
   margin: 12px 6px;
   background-color: #373737;
   padding: 6px 12px;
@@ -282,11 +280,10 @@ img {
   color: var(--white-color);
   transition: 0.5s;
 }
-.chip:hover {
+.content__chips__item:hover {
   background-color: #4D4D4D;
 }
-
-.video-container {
+.content__videos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 18px;
@@ -295,11 +292,36 @@ img {
   overflow-y: scroll;
   height: calc(100vh - 116px);
 }
-
-.video-content-cover {
+.content__videos__item {
   position: relative;
   transition: 0.5s;
   transition-delay: 0.05s;
+}
+.content__videos__item__content {
+  margin-bottom: 25px;
+  position: relative;
+  width: 100%;
+}
+.content__videos__item__content__box {
+  position: relative;
+  width: auto;
+  height: 145px;
+  display: block;
+}
+.content__videos__item__content__box:hover > .hidden-content {
+  display: flex;
+}
+.content__videos__item__content__details {
+  display: flex;
+  color: #fff;
+  padding-top: 12px;
+}
+.content__videos__item__content__details .channel-logo {
+  position: relative;
+  min-width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .video-content {
