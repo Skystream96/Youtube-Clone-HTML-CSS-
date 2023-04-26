@@ -341,30 +341,6 @@ img {
   justify-content: space-between;
 }
 
-.btn {
-  padding: 5px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  text-align: center;
-  margin: 5px 0;
-  font-size: 0.6rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.btn:first-child {
-  border-right: 2px solid rgba(255, 255, 255, 0.3);
-}
-.btn i {
-  font-size: 1rem;
-  margin-right: 5px;
-  color: var(--white-color);
-}
-
 .hidden-content {
   display: none;
   z-index: 99999;
@@ -372,6 +348,28 @@ img {
   align-items: flex-start;
   width: 50%;
   margin-left: auto;
+}
+.hidden-content__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 5px 0;
+  color: var(--white-color);
+  cursor: pointer;
+}
+.hidden-content__btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.hidden-content__btn:first-child {
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+.hidden-content__btn .ri-volume-mute-line,
+.hidden-content__btn .ri-closed-captioning-line {
+  font-size: 1rem;
 }
 
 @media (max-width: 1200px) {
