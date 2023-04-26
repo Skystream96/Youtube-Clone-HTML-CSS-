@@ -316,59 +316,25 @@ img {
   color: #fff;
   padding-top: 12px;
 }
-.content__videos__item__content__details .channel-logo {
+.content__videos__item__content__details__channel {
   position: relative;
   min-width: 35px;
   height: 35px;
   border-radius: 50%;
   overflow: hidden;
 }
-
-.video-content {
-  margin-bottom: 25px;
-  position: relative;
-  width: 100%;
-}
-
-.video-box {
-  position: relative;
-  width: auto;
-  height: 145px;
-  display: block;
-}
-.video-box:hover > .hidden-content {
-  display: flex;
-}
-
-.video-details {
-  display: flex;
-  color: #fff;
-  padding-top: 12px;
-}
-
-.channel-logo {
-  position: relative;
-  min-width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.detail {
+.content__videos__item__content__details__meta {
   margin-left: 12px;
 }
-
-.title {
+.content__videos__item__content__details__meta__title {
   font-size: 0.9rem;
 }
-
-.channel-name {
+.content__videos__item__content__details__meta__name {
   font-size: 0.8rem;
   margin-top: 10px;
   color: #aaa;
 }
-
-.views-upload {
+.content__videos__item__content__details__meta__views {
   display: flex;
   font-size: 0.8rem;
   color: #aaa;

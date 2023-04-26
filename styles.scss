@@ -308,13 +308,30 @@ img {
 					display: flex;
 					color: #fff;
 					padding-top: 12px;
-					.channel-logo {
+					&__channel {
 						position: relative;
 						min-width: 35px;
 						height: 35px;
 						border-radius: 50%;
 						overflow: hidden;
 
+					}
+					&__meta {
+						margin-left: 12px;
+						&__title {
+							font-size: .9rem;
+						}
+						&__name {
+							font-size: .8rem;
+							margin-top: 10px;
+							color: #aaa;
+						}
+						&__views {
+							display: flex;
+							font-size: .8rem;
+							color: #aaa;
+							justify-content: space-between;
+						}
 					}	
 				}
 			}
@@ -322,51 +339,6 @@ img {
 	}
 }
 
-.video-content {
-	margin-bottom: 25px;
-	position: relative;
-	width: 100%;
-}
-.video-box {
-	position: relative;
-	width: auto;
-	height: 145px;
-	display: block;
-	&:hover {
-		>.hidden-content {
-			display: flex;
-		}
-	}
-}
-.video-details {
-	display: flex;
-	color: #fff;
-	padding-top: 12px;
-}
-.channel-logo {
-	position: relative;
-	min-width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	overflow: hidden;
-}
-.detail {
-	margin-left: 12px;
-}
-.title {
-	font-size: .9rem;
-}
-.channel-name {
-	font-size: .8rem;
-	margin-top: 10px;
-	color: #aaa;
-}
-.views-upload {
-	display: flex;
-	font-size: .8rem;
-	color: #aaa;
-	justify-content: space-between;
-}
 .btn {
 	padding: 5px;
 	width: 100%;
