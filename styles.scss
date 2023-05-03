@@ -31,6 +31,14 @@
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  padding: 0;
+}
 h1 {
   font-size: 1.5rem;
 }
@@ -289,17 +297,17 @@ img {
 .video__media {
   &__wrapper {
     position: relative;
+    &:hover {
+      > .video__media__controls {
+        display: flex;
+      }
+    }
   }
   &__link {
     position: relative;
     width: auto;
     height: 145px;
     display: block;
-    &:hover {
-      ~ .video__media__controls {
-        display: flex;
-      }
-    }
   }
   &__controls {
     display: none;

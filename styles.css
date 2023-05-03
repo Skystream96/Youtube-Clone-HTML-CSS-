@@ -29,6 +29,15 @@
   scroll-behavior: smooth;
 }
 
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  padding: 0;
+}
+
 h1 {
   font-size: 1.5rem;
 }
@@ -298,14 +307,14 @@ img {
 .video__media__wrapper {
   position: relative;
 }
+.video__media__wrapper:hover > .video__media__controls {
+  display: flex;
+}
 .video__media__link {
   position: relative;
   width: auto;
   height: 145px;
   display: block;
-}
-.video__media__link:hover ~ .video__media__controls {
-  display: flex;
 }
 .video__media__controls {
   display: none;
