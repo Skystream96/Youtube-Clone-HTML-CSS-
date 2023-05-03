@@ -212,56 +212,60 @@ img {
   padding-top: 10px;
   width: 240px;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 .navbar:hover::-webkit-scrollbar-thumb {
   background: #717171;
 }
-.navbar__items {
-  display: flex;
-  flex-direction: column;
+.navbar__title {
+  display: block;
+  color: #f1f1f1;
+  padding: 6px 12px 4px;
 }
-.navbar__items__item {
-  display: flex;
-  align-items: center;
+.navbar__item {
   padding: 0 24px;
   cursor: pointer;
   height: 40px;
+  display: flex;
 }
-.navbar__items__item:hover {
+.navbar__item:hover {
   background-color: #4c4c4c;
 }
-.navbar__items__item__link {
+.navbar__item__link {
   color: var(--white-color);
   text-decoration: none;
   display: flex;
   align-items: center;
 }
-.navbar__items__item__link__subscriber {
+
+.navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscriber-wrapper {
   display: flex;
   align-items: center;
 }
-.navbar__items__item__link__subscriber__profile {
+.subscriber-wrapper__profile {
   position: relative;
   height: 30px;
   width: 30px;
   border-radius: 50%;
   overflow: hidden;
 }
-.navbar__items__item__link__subscriber__txt {
+.subscriber-wrapper__txt {
   padding: 12px;
 }
-.navbar__items__item__link__subscriber__bubble {
+
+.notification-bubble {
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background-color: #3ea6ff;
   margin: 0 6px;
   z-index: 99999;
-}
-.navbar__items__title {
-  display: block;
-  color: #f1f1f1;
-  padding: 6px 12px 4px;
 }
 
 .content {
