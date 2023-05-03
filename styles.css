@@ -292,7 +292,7 @@ img {
   transition: 0.5s;
 }
 .content__chips__item:hover {
-  background-color: #4D4D4D;
+  background-color: #4d4d4d;
 }
 .content__videos {
   display: grid;
